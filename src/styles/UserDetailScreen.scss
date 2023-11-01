@@ -1,0 +1,77 @@
+.investment-form-label {
+  color: #000;
+  align-self: start;
+
+  white-space: nowrap; /* Changed "text-wrap" to "white-space" */
+  font: 500 14px "Acumin Pro", Helvetica, sans-serif;
+}
+
+.investment-form-input {
+  font-family: "Acumin Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 8px 8px;
+  background-color: #f6f6f6;
+  border: 1px solid #e9e5e5;
+  border-radius: 5px;
+}
+
+.investment-form-input:focus {
+  border: 1px solid transparent; /* Hide the border when the input is focused */
+  outline: none; /* Remove the default focus outline */
+}
+
+.investment-form-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+  margin-top: 21px;
+}
+
+.investment-error-message {
+  color: red;
+  font: 500 14px "Acumin Pro", Helvetica, sans-serif;
+}
+
+.investment-form-input::placeholder {
+  color: var(--gray-03, #bdbdbd);
+  font-family: "Acumin Pro", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.investment-form-title {
+  display: flex;
+  flex-wrap: wrap; /* Wrap the text onto a new line for mobile */
+  font-family: Acumin Pro;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 109.091% */
+  text-transform: capitalize;
+  span {
+    white-space: nowrap; /* Prevent wrapping of individual spans */
+
+    &:nth-child(1) {
+      color: #283a97; 
+      margin-right: 5px;/* Color for "Get started" */
+    }
+
+    &:nth-child(2) {
+      color: #f15d2a;
+      margin-right: 5px /* Color for "on your" */
+    }
+
+    &:nth-child(3) {
+      color: #f15d2a; /* Color for "investment journey!" */
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-wrap: nowrap; /* Display the text in the same line for desktop */
+  }
+}

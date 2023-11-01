@@ -1,0 +1,179 @@
+@media (max-width: 767px) {
+  .main-container {
+    padding: 20px;
+  }
+}
+
+.login-container {
+  display: flex;
+  .login-left-column {
+    flex: 1;
+    display: flex;
+    background-image: url("./assets/backgroundImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    @media (max-width: 767px) {
+      padding: 20px; /* Hide on mobile (max-width: 767px) */
+      border-radius: 5px; 
+      margin: 25px 0px;/* Hide on mobile (max-width: 767px) */
+    }
+    @media (min-width: 767px) {
+      height: 100vh; /* Hide on mobile (max-width: 767px) */
+    }
+  }
+  .login-right-inner-container{
+    @media (min-width: 767px) {
+      width: 45%; /* Hide on mobile (max-width: 767px) */
+    }
+  }
+
+  .login-right-column {
+    flex: 1;
+    justify-content: center;
+    height: 100vh;
+    @media (max-width: 767px) {
+      justify-content: start; /* Hide on mobile (max-width: 767px) */
+    }
+  }
+}
+.login-footer-container {
+  .terms-and-conditions {
+    color: #000;
+    font-family: Acumin Pro;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px; /* 132.594% */
+    margin: 30px 0px 10px 0px;
+    @media (max-width: 767px) {
+      color: #767b8e;
+      line-height: 14px;
+      font-size: 10.559px; /* Hide on mobile (max-width: 767px) */
+    }
+  }
+  .login-footer-container {
+    margin-top: 50px;
+  }
+
+  .next-button {
+    border-radius: 4px;
+    background: #283a97;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 14px;
+    border: 1px solid #283a97;
+    &:disabled {
+      background: #ccc; /* Change the background color when disabled */
+      border: 1px solid #ccc; /* Change the border color when disabled */
+      cursor: not-allowed;
+      color: #666; /* Change the text color when disabled */
+    }
+  }
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-700 {
+  font-weight: 700;
+}
+
+.investment-details {
+  color: #fff;
+  font-family: "Acumin Pro", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  
+  /* Apply the common class to the HTML elements */
+  .text-capitalize {
+    text-transform: capitalize;
+  }
+
+  .or-color {
+    color: #ffa376; /* Color for laptop and tablet screens */
+  }
+
+  .investment-features-container {
+    display: flex;
+    gap: 6px;
+    margin: 5px 0px 40px;
+
+    .investment-feature {
+    
+      font-weight: 400;
+      font-family: "Acumin Pro", sans-serif;
+
+      border: 1px solid #fff;
+      // background-color: white;
+      text-align: center;
+      color:#FFF;
+      padding: 2px 8px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      @media (min-width: 767px) {
+        border-radius: 18px;
+        font-size: 12px;
+      }
+      @media (max-width: 767px) {
+        border-radius: 12px;
+        font-size: 9px;
+      }
+    }
+   
+  }
+
+  .investment-minimum-container {
+    font-size: 13.771px;
+    line-height: 148%; /* 20.38px */
+    text-transform: capitalize;
+    margin: 20px 0px 20px;
+  }
+  .return-container{
+    line-height: 30px;
+  }
+
+  .investment-assets {
+    display: flex;
+    align-items: center;
+
+    .investment-asset-details {
+      margin-left: 25px;
+      color: #fff;
+      font-family: "Acumin Pro", sans-serif;
+      font-style: normal;
+
+      .investment-asset-value {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 108%;
+      }
+
+      .investment-asset-label {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 160%;
+      }
+    }
+
+    img {
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
+    }
+  }
+}
+input.form-control {
+  height: 50px;
+}

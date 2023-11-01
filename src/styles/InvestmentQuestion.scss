@@ -1,0 +1,61 @@
+
+.greeting-container{
+  margin: 20px 0px;
+}
+.greeting-text {
+  color: var(--InCred-Money-Midnight-Blue, #283a97);
+  font-family: "Acumin Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.user-name {
+  color: var(--InCred-Money-Sunrise-Orange, #f15d2a);
+  font-family: "Acumin Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.investment-question {
+  color: #000;
+  font-family: "Acumin Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 20px 0px;
+}
+
+.investment-options-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.investment-option {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-family: "Acumin Pro";
+  background-color: #f6f6f6;
+  padding: 10px;
+  margin: 6px 0px;
+  border-radius: 5px;
+  color: var(--gray-03, #bdbdbd);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  gap: 10px;
+}
+
+.investment-option img {
+  margin-right: 5px;
+}
+.investment-options-container .selected {
+  border: 1px solid #3746a3;
+  color: #3746a3;
+}

@@ -1,0 +1,90 @@
+.otp-container {
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
+
+.otp-code-container {
+  display: flex;
+  justify-content: space-between;
+
+  .otp-code-box {
+    background-color: #f6f6f6;
+    border: 2px solid #f6f6f6; /* Set the default border color */
+    border-radius: 4px;
+    color: #000;
+    font-family: "Acumin Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+
+    &:focus {
+      border: 1px solid #283a97; /* Change the border color when focused */
+      outline: none; /* Remove the default outline style */
+    }
+  }
+}
+
+.resend-otp {
+  color: #f15d2a;
+  text-align: end;
+  margin: 5px 0px;
+  font-family: "Acumin Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.error {
+  color: red;
+  font: 500 14px "Acumin Pro", Helvetica, sans-serif;
+}
+
+.welcome-text {
+  color: #f15d2a;
+  align-self: start;
+  margin-top: 15px;
+  text-wrap: nowrap;
+  font: 700 22px/26px Acumin Pro, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.welcome-text-primary {
+  color: #000;
+  font-family: "Acumin Pro";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.welcome-text-secondary {
+  color: #f15d2a;
+  font-family: "Acumin Pro";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+.verification-text{
+  color: #525463;
+  font-family: Acumin Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 10px 0px;
+  span{
+    color:black
+  }
+}
