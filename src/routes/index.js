@@ -10,12 +10,8 @@ export const router = createBrowserRouter([
     element: <LoginScreen />,
   },
   {
-    element: <AuthProtected />,
-    children: [
-      {
-        path: "/posts",
-        element: <LandingPage />,
-      },
-    ],
+    path: "/posts",
+    element: <LandingPage />,
   },
+  
 ]);
