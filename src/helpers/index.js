@@ -29,8 +29,8 @@ export const showNextScreen = (screenStatus) => {
 /**This function will check mobile device */
 export const isMobileOrTabletDevice = () => {
   // Regular expression to match common mobile and tablet device user agents
-  const mobileOrTabletDeviceRegex =
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-
+  const mobileOrTabletDeviceRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+  
+  // Check if the userAgent matches the regex
   return mobileOrTabletDeviceRegex.test(navigator.userAgent);
 };

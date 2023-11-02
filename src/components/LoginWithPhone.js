@@ -49,7 +49,7 @@ const LoginWithPhone = () => {
   };
 
   return (
-    <div>
+    <>
       {isMobileOrTabletDevice() && (
         <div className=" align-items-center justify-content-center login-left-column">
           <InvestmentDetailsCard />
@@ -88,7 +88,7 @@ const LoginWithPhone = () => {
           </Form>
         )}
       </Formik>
-    </div>
+    </>
   );
 };
 

@@ -43,7 +43,7 @@ const SurveyQuestion = () => {
   };
 
   return (
-    <div className="survey-question-container">
+    <div>
         <div className="greeting-container">
         <div className="greeting-text">Hello</div>
         <div className="user-name">{userData.fullName},</div>
